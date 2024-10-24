@@ -3,7 +3,7 @@ from datetime import datetime
 import re
 
 # 码表
-FILENAME_DICT = 'moran_fixed_simp.dict.yaml'
+FILENAME_DICT = 'moran_fixed_simp.dict.origin.yaml'
          
 class ByWord:
     def __init__(self, code_len = 0, word_len=0, count_duplicated_code = 2):
@@ -349,7 +349,7 @@ def process(case):
 
 if __name__ == '__main__':
     # process(ByFilter(word_len=1, code_len=2))
-    process(ByCode(code_len=3, count_duplicated_word=1))
+    process(ByCode(code_len=1, count_duplicated_word=2))
     # process(ByWord(word_len=3, count_duplicated_code=1))
     
  
